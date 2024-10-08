@@ -5,28 +5,23 @@
 
 print("-----Calculating Expontents-----")
 
-# look back at zybooks activity 6.1.3
 # Enter an integer as base vaule of 7 
 # Enter an integer as exoonent value of 3 
-# use x= pow(4,3)
+# use x= pow(base value, exponent)
 
-x=0
-y=0
-bv=
-ex=y**3
-
-#calculating exponents 
 #convert into integer 
+base_value = int(input("base_value?"))
+exponent=int(input("exponent?"))
+print(base_value**exponent)
 
-#base_value = int(input("x"))
-#print("7**0",x)
-#exponent=int(input("y"))
-#rint("0**3", y)
-#print(bv, "x\t")
-#print(ex, "y\t")
-
-#additon and subtraction
-
-7**2
-
-5**3
+print("-----Additon and Subtraction-----")
+#staring integer as 10
+#integer to add as 6
+#integer to subtract as 4 
+x=6
+y=4
+si=10
+si=int(input("integer to start?"))
+x=int(input("integer to add?"))
+y=int(input("integer to subtract?"))
+print(si+x-y)
