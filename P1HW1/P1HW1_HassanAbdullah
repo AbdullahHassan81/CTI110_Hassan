@@ -1,0 +1,32 @@
+#Abdullah Hassan
+#10/4/24
+#P1HW1
+#a program that does math for you 
+
+print("-----Calculating Expontents-----")
+
+# look back at zybooks activity 6.1.3
+# Enter an integer as base vaule of 7 
+# Enter an integer as exoonent value of 3 
+# use x= pow(4,3)
+
+x=0
+y=0
+bv=
+ex=y**3
+
+#calculating exponents 
+#convert into integer 
+
+#base_value = int(input("x"))
+#print("7**0",x)
+#exponent=int(input("y"))
+#rint("0**3", y)
+#print(bv, "x\t")
+#print(ex, "y\t")
+
+#additon and subtraction
+
+7**2
+
+5**3

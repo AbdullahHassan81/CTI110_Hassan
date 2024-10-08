@@ -22,7 +22,7 @@ print("You ordered", num_biryani, "biryani")
 num_kemma = int(input("How much kemma's?"))
 print("You ordered", num_kemma, "keema's")
 
-# Adding up to total
+    # Adding up to total
 biryani_total = num_biryani * biryani_cost
 kemma_total = num_kemma * kemma_cost
 meal_total = biryani_total + kemma_total
