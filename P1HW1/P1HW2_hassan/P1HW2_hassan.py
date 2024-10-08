@@ -6,7 +6,7 @@
 #This program does a travel budegt
 
 """
-3.Ask user to enter thier bugdet
+3.Ask user to enter thier bugdet 
 ask user to enter destination
 ask user for gas amount 
 ask user for accomadtion amount
@@ -16,10 +16,20 @@ subtract expenses from budget
 display results
 """
 
-print("#" * 10, "Trip Calculator", "#" * 10)
+print("🚌" * 5, "Trip Calculator", "🚌" * 5)
 budget = float(input("What is your travel budget? $"))
 #Where they going
 destination = input("Where are you going?")
 
+
 #TODO: the rest 
-print("Your bugdet: $", format(budget, ".2f"))
+Gas=float(input("How much do you think you will spend on gas?"))
+Food=float(input("Approximately, how much do you need for food?"))
+
+print("-----Travel Expenses-----")
+
+Location=input("Location:")
+Budget=float(input("Initial Budget:"))
+Accomodation=float(input("Accomodation:"))
+Food=float(input("Food:"))
+Remainder=float(input("Remaining Balance:"))
