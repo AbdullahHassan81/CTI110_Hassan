@@ -1,0 +1,27 @@
+::Start
+Welcome to your adventure. You decide to go home.
+
+[[Order Chicken 65->Chicken65]]
+[[Get Desi->Desi]]
+[[Get Summoned->Summoned]]
+[[Get Egged->Egged]]
+
+::Chicken65
+The chicken is laced with blood that attracts 65 deadly monsters that hunt you.
+HOW DID YOU LIKE YOUR TREAT?
+[[Start Over->Start]]
+
+::Desi
+The desi food will corrupt your mind and will make you transform into a beast at night.
+THERE IS NO HAPPY ENDING FOR THE LIKES OF YOU.
+[[Start Over->Start]]
+
+::Summoned
+You get summoned by a political figure who blackmails you into joining his cult.
+THE FUN BEGINS!
+[[Start Over->Start]]
+
+::Egged
+You go on your way home and get egged with acid eggs.
+WOMP WOMP WOMP
+[[Start Over->Start]]
