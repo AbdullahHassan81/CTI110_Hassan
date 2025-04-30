@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Racing Destiny</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        #story {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="story">
+        <div id="start" style="display:block;">
+            <h1>Racing Destiny</h1>
+            <p>You are Jake Rodriguez, a street racer with one last chance to save your family's garage from bankruptcy. The Underground City Racing Championship offers a prize that could change everything.</p>
+            <p>[[Begin Your Journey]]</p>
+        </div>
+
+        <div id="begin-your-journey" style="display:none;">
+            <h2>The Challenge</h2>
+            <p>The championship requires an entry fee of $10,000 and a custom-built racing car. Your family's garage is on the line, and you have three potential paths:</p>
+            <p>
+                [[Borrow money from a local loan shark|loan-shark]]
+                [[Sell your personal car to raise funds|sell-car]]
+                [[Ask your racing mentor for help|mentor-help]]
+            </p>
+        </div>
+
+        <div id="loan-shark" style="display:none;">
+            <h2>The Loan Shark</h2>
+            <p>Victor "The Shark" Rodriguez (no relation) offers you the money, but his terms are brutal. The interest is 50% and he wants a piece of your future winnings.</p>
+            <p>
+                [[Accept the risky loan|loan-accepted]]
+                [[Decline and look for another option|begin-your-journey]]
+            </p>
+        </div>
+
+        <div id="loan-accepted" style="display:none;">
+            <h2>No Turning Back</h2>
+            <p>You've taken Victor's money. The stakes are high, and failure is not an option. Your first race is against the city's most notorious street racer, "Midnight" Mike.</p>
+            <p>
+                [[Prepare for the race|race-preparation]]
+            </p>
+        </div>
+
+        <div id="race-preparation" style="display:none;">
+            <h2>Race Preparation</h2>
+            <p>You have limited time to prepare. Do you want to:</p>
+            <p>
+                [[Tune your engine for maximum speed|speed-tune]]
+                [[Focus on handling and control|handling-tune]]
+                [[Hire a professional mechanic|mechanic-tune]]
+            </p>
+        </div>
+
+        <div id="speed-tune" style="display:none;">
+            <h2>Speed Demon</h2>
+            <p>You push your car's engine to its absolute limit. The modifications are risky but could give you an edge.</p>
+            <p>As you line up at the starting line, "Midnight" Mike smirks at you. The race is about to begin.</p>
+            <p>
+                [[Start the Race|race-outcome-speed]]
+            </p>
+        </div>
+
+        <div id="race-outcome-speed" style="display:none;">
+            <h2>The Race</h2>
+            <p>Your souped-up engine roars. You're faster than ever, but the handling is unpredictable. One wrong move could cost you everything.</p>
+            <p>
+                [[Take a dangerous shortcut|dangerous-shortcut]]
+                [[Stay on the safe racing line|safe-race]]
+            </p>
+        </div>
+
+        <div id="dangerous-shortcut" style="display:none;">
+            <h2>High-Risk Maneuver</h2>
+            <p>You take the shortcut, weaving through narrow alleys. Your car scrapes against walls, the engine screaming.</p>
+            <p>Suddenly, a critical decision presents itself...</p>
+            <p>
+                [[Push the car to its absolute limit|total-engine-failure]]
+                [[Ease off and maintain control|narrow-victory]]
+            </p>
+        </div>
+
+        <div id="total-engine-failure" style="display:none;">
+            <h2>Engine Failure</h2>
+            <p>Your engine explodes in a cloud of smoke. You've lost the race, the money, and your family's hope.</p>
+            <p>GAME OVER</p>
+            <p>[[Restart|start]]</p>
+        </div>
+
+        <div id="narrow-victory" style="display:none;">
+            <h2>Victory!</h2>
+            <p>By a razor-thin margin, you beat "Midnight" Mike. The crowd goes wild. You've won your first race and a step closer to saving the garage.</p>
+            <p>But the journey is far from over...</p>
+            <p>[[Continue to Next Race|championship-round]]</p>
+        </div>
+
+        <div id="championship-round" style="display:none;">
+            <h2>The Championship</h2>
+            <p>You've made it to the final round. The prize money will save your family's garage. But the competition is fierce.</p>
+            <p>One last race decides everything.</p>
+            <p>[[Prepare for the Final Race|final-race]]</p>
+        </div>
+
+        <div id="final-race" style="display:none;">
+            <h2>Racing for Everything</h2>
+            <p>The final race is a test of skill, nerve, and destiny. Your family's future hangs in the balance.</p>
+            <p>
+                [[Give it everything you've got|race-finale]]
+            </p>
+        </div>
+
+        <div id="race-finale" style="display:none;">
+            <h2>The Finale</h2>
+            <p>In a heart-stopping finish, you cross the line first! The crowd erupts. You've won the championship and saved your family's garage.</p>
+            <p>CONGRATULATIONS!</p>
+            <p>[[Play Again|start]]</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('click', function(event) {
+            if (event.target.tagName === 'A') {
+                event.preventDefault();
+                const targetId = event.target.textContent.toLowerCase().replace(/\s+/g, '-');
+                
+                // Hide all divs
+                document.querySelectorAll('#story > div').forEach(div => {
+                    div.style.display = 'none';
+                });
+
+                // Show target div
+                const targetDiv = document.getElementById(targetId);
+                if (targetDiv) {
+                    targetDiv.style.display = 'block';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

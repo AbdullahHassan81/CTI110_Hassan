@@ -1,0 +1,155 @@
+:: StoryTitle
+Racing Destiny
+
+
+:: StoryData
+{
+  "ifid": "D674A87C-9F20-4A2F-BC66-5E0EDF792DD6",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "zoom": 1
+}
+
+
+:: Begin Your Journey {"position":"150,25","size":"100,100"}
+## The Challenge
+
+The championship requires an entry fee of $10,000 and a custom-built racing car. Your family's garage is on the line, and you have three potential paths:
+
+[[Borrow money from a local loan shark|Loan Shark]]
+[[Sell your personal car to raise funds|Sell Car]]
+[[Ask your racing mentor for help|Mentor Help]]
+
+
+:: Championship Round {"position":"25,150","size":"100,100"}
+## The Championship
+
+You've made it to the final round. The prize money will save your family's garage. But the competition is fierce.
+
+One last race decides everything.
+
+[[Prepare for the Final Race|Final Race]]
+
+
+:: Dangerous Shortcut {"position":"900,25","size":"100,100"}
+## High-Risk Maneuver
+
+You take the shortcut, weaving through narrow alleys. Your car scrapes against walls, the engine screaming.
+
+Suddenly, a critical decision presents itself...
+
+[[Push the car to its absolute limit|Total Engine Failure]]
+[[Ease off and maintain control|Narrow Victory]]
+
+
+:: Final Race {"position":"150,150","size":"100,100"}
+## Racing for Everything
+
+The final race is a test of skill, nerve, and destiny. Your family's future hangs in the balance.
+
+[[Give it everything you've got|Race Finale]]
+
+
+:: Loan Accepted {"position":"400,25","size":"100,100"}
+## No Turning Back
+
+You've taken Victor's money. The stakes are high, and failure is not an option. Your first race is against the city's most notorious street racer, "Midnight" Mike.
+
+[[Prepare for the race|Race Preparation]]
+
+
+:: Loan Shark {"position":"275,25","size":"100,100"}
+## The Loan Shark
+
+Victor "The Shark" Rodriguez (no relation) offers you the money, but his terms are brutal. The interest is 50% and he wants a piece of your future winnings.
+
+[[Accept the risky loan|Loan Accepted]]
+[[Decline and look for another option|Begin Your Journey]]
+
+
+:: Mentor Help {"position":"525,150","size":"100,100"}
+## Wisdom of Experience
+
+Your mentor, an old racing legend, listens to your story. After a long pause, he offers to help you modify your car and cover the entry fee.
+
+But there's a catch - you'll owe him a significant favor if you win.
+
+[[Accept the mentor's help|Race Preparation]]
+[[Decline and find another way|Begin Your Journey]]
+
+
+:: Narrow Victory {"position":"1150,25","size":"100,100"}
+## Victory!
+
+By a razor-thin margin, you beat "Midnight" Mike. The crowd goes wild. You've won your first race and a step closer to saving the garage.
+
+But the journey is far from over...
+
+[[Continue to Next Race|Championship Round]]
+
+
+:: Race Finale {"position":"275,150","size":"100,100"}
+## The Finale
+
+In a heart-stopping finish, you cross the line first! The crowd erupts. You've won the championship and saved your family's garage.
+
+CONGRATULATIONS!
+
+[[Play Again|Start]]
+
+
+:: Race Outcome Speed {"position":"775,25","size":"100,100"}
+## The Race
+
+Your souped-up engine roars. You're faster than ever, but the handling is unpredictable. One wrong move could cost you everything.
+
+[[Take a dangerous shortcut|Dangerous Shortcut]]
+[[Stay on the safe racing line|Safe Race]]
+
+
+:: Race Preparation {"position":"525,25","size":"100,100"}
+## Race Preparation
+
+You have limited time to prepare. Do you want to:
+
+[[Tune your engine for maximum speed|Speed Tune]]
+[[Focus on handling and control|Handling Tune]]
+[[Hire a professional mechanic|Mechanic Tune]]
+
+
+:: Sell Car {"position":"400,150","size":"100,100"}
+## Difficult Choice
+
+Your personal car is your most prized possession, but the garage needs saving. You reluctantly put it up for sale.
+
+The money is just enough to enter the championship, but now you have no backup plan.
+
+[[Proceed to Race Preparation|Race Preparation]]
+
+
+:: Speed Tune {"position":"650,25","size":"100,100"}
+## Speed Demon
+
+You push your car's engine to its absolute limit. The modifications are risky but could give you an edge.
+
+As you line up at the starting line, "Midnight" Mike smirks at you. The race is about to begin.
+
+[[Start the Race|Race Outcome Speed]]
+
+
+:: Start {"position":"25,25","size":"100,100"}
+# Racing Destiny
+
+You are Jake Rodriguez, a street racer with one last chance to save your family's garage from bankruptcy. The Underground City Racing Championship offers a prize that could change everything.
+
+[[Begin Your Journey]]
+
+
+:: Total Engine Failure {"position":"1025,25","size":"100,100"}
+## Engine Failure
+
+Your engine explodes in a cloud of smoke. You've lost the race, the money, and your family's hope.
+
+GAME OVER
+
+[[Restart|Start]]

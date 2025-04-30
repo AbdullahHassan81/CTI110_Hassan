@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpeedofCars.com - Dealerships</title>
+    <style>
+        .section-image {
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    
+				<li><a href="index-html.html">Home</a></li>
+                <li><a href="dealerships-html.html">Dealerships</a></li>
+                <li><a href="maintenance-html.html">Maintenance</a></li>
+    </div>
+
+    <main role="main">
+        <div id="local-dealerships" class="section">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Car Dealerships Finder</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        #dealerships {
+            margin-top: 20px;
+        }
+        .dealership {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        #error {
+            color: red;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Local Car Dealerships Finder</h1>
+    
+    <div>
+        <label for="location">Enter Location (City, State or Zip):</label>
+        <input type="text" id="location" placeholder="e.g., San Francisco, CA">
+        <button onclick="findDealerships()">Find Dealerships</button>
+    </div>
+
+    <div id="error"></div>
+    <div id="dealerships"></div>
+
+    <script>
+        <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .search-container {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        input, select, button {
+            margin-right: 10px;
+            padding: 10px;
+        }
+        #results {
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .method-result {
+            background-color: #f4f4f4;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<script>
+<body>
+    <h1>Car Dealership Finder</h1>
+    
+    <div class="search-container">
+        <input type="text" id="locationInput" placeholder="Enter City, State">
+        <select id="searchMethod">
+            <option value="scrape">Web Scraping</option>
+            <option value="directory">Local Directories</option>
+            <option value="marketplace">Online Marketplaces</option>
+        </select>
+        <button onclick="findDealerships()">Find Dealerships</button>
+    </div>
+
+    <div id="results"></div>
+
+    <script>
+       <div class="search-container">
+    <input type="text" id="locationInput" placeholder="Enter City, State">
+    <select id="searchMethod">
+        <option value="scrape">Web Scraping</option>
+        <option value="directory">Local Directories</option>
+        <option value="marketplace">Online Marketplaces</option>
+    </select>
+    <button onclick="findDealerships()">Find Dealerships</button>
+</div>
+</script>
+</body>
+</html>
+
+            <div class="dealership-search">
+                Find Dealerships
+            </div>
+        </div>
+
+       
+<div>
+    <h2>Online Car Dealership Websites</h2>
+    <ul>
+        <li><a href="https://www.carvana.com">Carvana</a></li>
+        <li><a href="https://www.carmax.com">CarMax</a></li>
+        <li><a href="https://www.vroom.com">Vroom</a></li>
+        <li><a href="https://www.cars.com">Cars.com</a></li>
+        <li><a href="https://www.autotrader.com">AutoTrader</a></li>
+        <li><a href="https://www.truecar.com">TrueCar</a></li>
+        <li><a href="https://www.carfax.com">CarFax</a></li>
+        <li><a href="https://www.edmunds.com">Edmunds</a></li>
+    </ul>
+</div>
+
+
+        <div id="car-clubs" class="section">
+            <h2>Car Clubs & Museums</h2>
+           <div id="carClubsMuseums">
+    <input type="text" id="locationInput" placeholder="Enter City, State">
+    <button onclick="findCarClubsAndMuseums()">Find Car Clubs & Museums</button>
+    <div id="results"></div>
+
+    <script>
+        const carClubsDatabase = {
+            'San Francisco': [
+                { name: 'Bay Area Automotive Club', type: 'Car Club', contact: '(415) 555-1234' },
+                { name: 'Classic Car Enthusiasts', type: 'Car Club', contact: '(415) 555-5678' }
+            ],
+            'New York': [
+                { name: 'NYC Vintage Car Society', type: 'Car Club', contact: '(212) 555-9876' },
+                { name: 'Manhattan Motorsports Club', type: 'Car Club', contact: '(212) 555-4321' }
+            ]
+        };
+
+        const carMuseumsDatabase = {
+            'San Francisco': [
+                { name: 'San Francisco Automotive Museum', address: '2121 Sutter St', phone: '(415) 387-7507' },
+                { name: 'Ferrari Owners Club Museum', address: '123 Racing Lane', phone: '(415) 555-7890' }
+            ],
+            'New York': [
+                { name: 'Automotive Museum of America', address: '789 Auto Way', phone: '(212) 555-2468' },
+                { name: 'Classic Car Hall of Fame', address: '456 Vintage Road', phone: '(212) 555-1357' }
+            ]
+        };
+
+        function findCarClubsAndMuseums() {
+            const location = document.getElementById('locationInput').value;
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // Clear previous results
+
+            if (!location) {
+                alert('Please enter a location');
+                return;
+            }
+
+            const clubs = carClubsDatabase[location] || [];
+            const museums = carMuseumsDatabase[location] || [];
+
+            if (clubs.length === 0 && museums.length === 0) {
+                resultsDiv.innerHTML = '<p>No car clubs or museums found in this location.</p>';
+                return;
+            }
+
+            // Generate HTML for clubs
+            const clubsHtml = clubs.map(club => `
+                <div class="club-result">
+                    <h3>${club.name}</h3>
+                    <p>Type: ${club.type}</p>
+                    <p>Contact: ${club.contact}</p>
+                </div>
+            `).join('');
+
+            // Generate HTML for museums
+            const museumsHtml = museums.map(museum => `
+                <div class="museum-result">
+                    <h3>${museum.name}</h3>
+                    <p>Address: ${museum.address}</p>
+                    <p>Phone: ${museum.phone}</p>
+                </div>
+            `).join('');
+
+            // Combine and display results
+            resultsDiv.innerHTML = `
+                <h2>Car Clubs in ${location}</h2>
+                ${clubsHtml || '<p>No car clubs found.</p>'}
+                
+                <h2>Car Museums in ${location}</h2>
+                ${museumsHtml || '<p>No car museums found.</p>'}
+            `;
+        }
+    </script>
+</div>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 SpeedofCars.com. All rights reserved.
+
+        <div class="contact-info">
+            Contact Us: support@speedofcars.com
+        </div>
+    </footer>
+</body>
+</html>
